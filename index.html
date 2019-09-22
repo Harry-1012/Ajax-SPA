@@ -6,35 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@2.2/lib/index.css">
-    <script src="src/js/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vant@2.2/lib/vant.min.js"></script>
-    <link rel="stylesheet" href="src/css/index.css" /> 
+    <link rel="stylesheet" href="src/css/index.css" />
 </head>
 
 <body>
-    <!--left Menu-->
-    <div class="large-2 columns">
-            <div>
-                <img src="src/res/img/logo.png"/>
-            </div>
-            
-            <ul class="menu-list">
-                <li data-icon="work-summary1" data-code="work-summary" class="selected">
-                    <img src="src/res/img/work-plan.png" />
-                    <span>工作总结ONE</span>
-                </li>
-                <li data-icon="work-summary1" data-code="work-plan">
-                    <img src="src/res/img/work-summary.png" />
-                    <span>工作计划ONE</span>
-                </li>
-            </ul>
-        </div>
-    
-        <!--right content-->
+    <section id="app">
+        <!-- content-->
         <div class="large-10 columns content"> </div>
-
+        <!-- Menu-->
+        <van-tabbar v-model="active">
+            <van-tabbar-item data-code="index" icon="home-o">标签</van-tabbar-item>
+            <van-tabbar-item data-code="index" icon="search">标签</van-tabbar-item>
+            <van-tabbar-item data-code="index" icon="friends-o">标签</van-tabbar-item>
+            <van-tabbar-item data-code="index" icon="setting-o">标签</van-tabbar-item>
+        </van-tabbar>
+    </section>
 </body>
+<script src="src/js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vant@2.2/lib/vant.min.js"></script>
 <script src="src/js/main.js"></script>
 
 </html>

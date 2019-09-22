@@ -14,11 +14,6 @@ body {
     overflow: auto;
 }
 
-.columns {
-	background: #000;
-	height: 100%;
-}
-
 /* Menu */
 .menu-list{
 	background: #202126;
@@ -50,7 +45,4 @@ body {
 
 /* Right */
 .content {
-	background: #f0f1f3;
-	border-top: 2px solid #131217;
-	border-right: 2px solid #131217;
 }
